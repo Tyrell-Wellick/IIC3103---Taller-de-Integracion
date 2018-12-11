@@ -25,5 +25,5 @@ Rails.application.routes.draw do
   post '/entries/:entry_id/', to: 'comments#create', :as => :new_entry_comment_post
   post '/comments/new', to: 'comments#create'
 
-  get '/transforme', to: 'api/api#hola'
+  get '/transforme/:code/', to: 'api/api#hola'
 end
